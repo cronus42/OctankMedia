@@ -12,8 +12,8 @@ class Auth extends React.Component {
     config.config.set({
       region: 'us-east-1',
       IdentityPoolId: '',
-      UserPoolId: 'us-east-1_EEtXcO2PV',
-      ClientId: '79c2ieo8ubsibcqn7msk19ea89'
+      UserPoolId: 'us-east-1_8fulUse6V',
+      ClientId: '5risub48qbksj0ph404l1l14u9'
     })
 
     this.props.getUser()

@@ -12,6 +12,7 @@ import ForceChangePassword from './components/ForceChangePassword'
 import Header from './components/Header'
 import Auth from './components/Auth'
 import PrivateRoute from './components/PrivateRoute'
+import Game from './components/Game'
 
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 
@@ -32,6 +33,7 @@ class App extends React.Component {
             <Header />
             <Switch>
               <PrivateRoute path="/protected" component={Protected} />
+              <Route path="/game" component={Game} />
               <Route path="/signin" component={SignIn} />
               <Route path="/signup" component={SignUp} />
               <Route path="/resetpassword" component={ResetPassword} />
