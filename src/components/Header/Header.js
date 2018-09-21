@@ -30,7 +30,7 @@ export default class HeaderComponent extends React.Component {
       <div>
         <Toolbar>
           <ToolbarGroup>
-            <IconButton
+            {/* <IconButton
               href="https://github.com/dbroadhurst/aws-cognito-react"
               target="_blank"
             >
@@ -40,7 +40,7 @@ export default class HeaderComponent extends React.Component {
             <FlatButton
               label="aws-cognito-react"
               containerElement={<Link to="/" />}
-            />
+            /> */}
           </ToolbarGroup>
 
           <ToolbarGroup>
