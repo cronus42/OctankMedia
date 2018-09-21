@@ -4,7 +4,7 @@
   "description": "aws-cognito-react primary goal is to provide user management services for a web App in a scalable serverless way.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dbroadhurst/aws-cognito-react"
+    "url": "https://github.com/regeraws/OctankMedia.git"
   },
   "keywords": [
     "aws",
@@ -15,17 +15,17 @@
     "redux",
     "saga"
   ],
-  "author": "David Broadhurst",
-  "homepage": "http://cognito.dbroadhurst.net",
+  "author": "ElasticHawks",
+  "homepage": "http://plays.oktank.ca",
   "license": "MIT",
   "dependencies": {
-    "aws-cognito-redux-saga": "^1.5.7",
+    "aws-cognito-redux-saga": "^1.5.10",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
-    "react-scripts": "1.0.17",
+    "react-scripts": "^1.1.5",
     "react-tap-event-plugin": "^3.0.2",
     "redux": "^3.6.0",
     "redux-form": "^7.2.0",
@@ -36,6 +36,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy-prod": "aws s3 rm s3://plays-prod.oktank.ca --recursive && aws s3 cp build/ s3://plays-prod.oktank.ca --recursive --acl public-read",
+    "clean": "aws s3 rm s3://plays-prod.oktank.ca --recursive",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "server": "http-server build"
