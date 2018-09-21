@@ -32,8 +32,8 @@ $(document).ready(function () {
             data: dataStrOfJsonHR,
             dataType: "json",
             contentType: "application/json"
-            
         });
+        refreshPage();
     }); 
 
     /////////////------------------------------------------
@@ -61,8 +61,8 @@ $(document).ready(function () {
             data: dataStrOfJsonFB,
             dataType: "json",
             contentType: "application/json"
-            
         });
+        refreshPage();
     }); 
 
     /////////////////-----------------------------
@@ -90,8 +90,8 @@ $(document).ready(function () {
             data: dataStrOfJsonSteal,
             dataType: "json",
             contentType: "application/json"
-            
         });
+        refreshPage();
     }); 
 
 
@@ -112,6 +112,9 @@ $(document).ready(function () {
     return Math.floor(Math.random() * (max - min + 1)) + min;
    }
 
+   function refreshPage(){
+        window.location.reload();
+    } 
 
     $('#from').on('change', function () {
         fromCurrency = this.value;
